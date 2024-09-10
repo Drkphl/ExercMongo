@@ -1,4 +1,3 @@
-const Schema = require('mongoose');
 const db = require('../db.js');
 
 const Schema = db.Schema;
@@ -13,5 +12,6 @@ const canetaSchema = new Schema({
         required: true,
     },
 });
+const Caneta = db.model('Caneta', canetaSchema);
 
-module.exports = canetaSchema;
+module.exports = Caneta;
