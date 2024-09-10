@@ -8,3 +8,4 @@ router.get('/:id', canetaController.show());
 router.put('/:id', canetaController.update());
 router.delete('/:id', canetaController.destroy());
 
+module.exports = router;
