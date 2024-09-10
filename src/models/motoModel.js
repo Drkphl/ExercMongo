@@ -7,12 +7,12 @@ const motoSchema = new Schema({
         type: Schema.Types.String,
         required: true,
     },
-    Modelo: {
-        type: String,
-        required: true,
-    },
     Cor: {
         type: Schema.Types.String,
+        required: true,
+    },
+    Modelo: {
+        type: String,
         required: true,
     },
     Cilindrada: {
