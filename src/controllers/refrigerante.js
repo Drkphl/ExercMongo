@@ -1,5 +1,4 @@
 const refrigerante = require('../models/refrigeranteModel.js');
-
 const store = (req, res) => {
     refrigerante.create(req.body);
     res.json();

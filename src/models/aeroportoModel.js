@@ -13,6 +13,6 @@ const aeroportoSchema = new Schema({
     },
 });
 
-const Aeroporto = db.model('Aeroporto', aeroportoSchema);
+const Aeroporto = db.model('aeroporto', aeroportoSchema);
 
 module.exports = Aeroporto;
