@@ -1,11 +1,12 @@
 const express = require('express');
-const router = express.Router;
 const aeroportoController = require('../controllers/aeroporto.js');
+const cep_endereco = require('../middlewares/cep_endereco.js');
+const router = express.Router();
 
-router.post('/', aeroportoController.store());
+router.post('/', cep_endereco, aeroportoController.store());
 router.get('/', aeroportoController.index());
 router.get('/:id', aeroportoController.show());
-router.put('/:id', aeroportoController.update());
+router.put('/:id', cep_endereco, aeroportoController.update());
 router.delete('/:id', aeroportoController.destroy());
 
 module.exports = router;

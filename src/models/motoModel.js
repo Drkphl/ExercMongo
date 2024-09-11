@@ -4,11 +4,11 @@ const Schema = db.Schema;
 
 const motoSchema = new Schema({
     Marca: {
-        type: Schema.Types.String,
+        type: String,
         required: true,
     },
     Cor: {
-        type: Schema.Types.String,
+        type: String,
         required: true,
     },
     Modelo: {
@@ -16,7 +16,7 @@ const motoSchema = new Schema({
         required: true,
     },
     Cilindrada: {
-        type: Number,
+        type: Schema.Types.Mixed,
         required: true,
     },
     Peso: {
